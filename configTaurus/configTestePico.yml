@@ -1,0 +1,9 @@
+execution:
+- executor: jmeter
+  hold-for: 5m
+  scenario: testeAgi-Pico.jmx
+
+reporting:
+- module: passfail
+  criteria:
+  - p90>2s for 300s
